@@ -42,7 +42,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: myip
-          token: ${{ secrets.GH_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
 
